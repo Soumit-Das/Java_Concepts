@@ -1,0 +1,112 @@
+
+class Student
+{
+    int rollno;
+    String name;
+    int marks;
+}
+
+public class Enhanched_for_loop {
+    public static void main(String[] args)
+    {
+        Student s1=new Student();
+        s1.rollno=1;
+        s1.name="Navin";
+        s1.marks=88;
+
+        Student s2=new Student();
+        s2.rollno=2;
+        s2.name="Harsh";
+        s2.marks=67;
+
+        Student s3=new Student();
+        s3.rollno=3;
+        s3.name="Kiran";
+        s3.marks=97;
+
+        System.out.println(s1.name + ":"+ s1.marks);
+
+        Student students[]=new Student[3];
+        students[0]=s1;
+        students[1]=s2;
+        students[2]=s3;
+
+//		for(int i=0;i<students.length;i++)
+//		{
+//			System.out.println(students[i].name+":"+students[i].marks);
+//		}
+
+        for(Student stud: students)
+        {
+            System.out.println(stud.name +":"+stud);
+        }
+
+
+
+
+        int nums[]=new int[4];
+        nums[0]=4;
+        nums[1]=8;
+        nums[2]=3;
+        nums[3]=9;
+
+//		for (int i=0;i<nums/length;i++)
+//		{
+//			System.out.println(nums[i]);
+//		}
+
+        for(int n: nums)
+        {
+            System.out.println(n);
+        }
+
+    }
+}
+
+// Second Example of Enhance for loop
+
+class ArrayDemo
+{
+    public static void main(String[] args)
+    {
+//		int a[] = {1,2,3,4};
+
+//		for(int i=0;i<4;i++)
+//		{
+//			System.out.println(a[i]);
+//		}
+//
+//		for(int k : a)
+//		{
+//			System.out.println(k);
+//		}
+
+        int a[] = {1,2,3,4};
+        int b[] = {2,4,6,8};
+        int c[] = {5,6,7,8};
+
+        int d[][] = {
+                {1,2,3,4},    // Jagged Arrays
+                {2,4,8},
+                {5,6,7,8,9}
+        };
+
+
+        for(int i=0;i<d.length;i++)
+        {
+            for(int j=0;j<d[i].length;j++)
+            {
+                System.out.print(" " + d[i][j]);
+            }
+            System.out.println();
+        }
+        for(int k[] : d )
+        {
+            for(int l : k)
+            {
+                System.out.println(" " + l);
+            }
+            System.out.println();
+        }
+    }
+}
