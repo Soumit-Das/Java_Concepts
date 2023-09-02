@@ -6,7 +6,7 @@ interface Intr {
 
 }
 
-public class Main implements Intr{
+public class Main implements Intr {
 
     @Override
     public void printName() {
@@ -19,8 +19,7 @@ public class Main implements Intr{
         m.printName();
 
 
-
-        }
+    }
 
 
 }
