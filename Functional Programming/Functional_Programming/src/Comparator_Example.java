@@ -42,18 +42,6 @@ class Studtdt{
                 ;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Studtdt studtd = (Studtdt) o;
-        return roll == studtd.roll && marks == studtd.marks && Objects.equals(name, studtd.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(roll, name, marks);
-    }
 
 
 }
@@ -78,6 +66,8 @@ public class Comparator_Example {
         });
 
         stud.forEach(s -> System.out.println(s));
+
+        // stud.forEach(System.out::println);
 
     }
 
