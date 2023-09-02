@@ -6,5 +6,5 @@ public class Function_Example {
         Function<Integer,String> f = i -> "This is a numner "+i;
         System.out.println(f.apply(10));
     }
-    
+
 }
