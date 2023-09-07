@@ -23,4 +23,16 @@
 
 	
  
+ 
+ 
+ <bean id="d1" class="com.SpringPractice.daoApp2.Demo3" autowire="constructor" />
+<bean id="a5" class="com.SpringPractice.daoApp2.A"/>
+<bean id="a6" class="com.SpringPractice.daoApp2.A" />
+<bean id="b5" class="com.SpringPractice.daoApp2.B" />
+
+
+<bean id="a1" class="com.SpringPractice.InitandDispo.A" init-method="mySetup">
+		<property name="message" value="Welcome to Spring.."/>
+	</bean>
+ 
 </beans>
