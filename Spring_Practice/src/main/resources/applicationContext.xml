@@ -34,5 +34,28 @@
 <bean id="a1" class="com.SpringPractice.InitandDispo.A" init-method="mySetup">
 		<property name="message" value="Welcome to Spring.."/>
 	</bean>
+	
+	
+	<bean id="a16" class="com.SpringPractice.Destroy.A" init-method="mySetup" destroy-method="destroy">
+		<property name="message" value="Welcome to Spring.."/>
+	</bean>
+ 
+ 
+ <bean id="ai18" class="com.SpringPractice.Injecting_Collections.A">
+	
+		<property name="names">
+			
+			<list>
+			
+				<value>Delhi</value>
+				<value>Chennai</value>
+				<value>Kolkata</value>
+				<value>Mumbai</value>			
+
+			</list>
+	
+		</property>
+	
+	</bean>
  
 </beans>
