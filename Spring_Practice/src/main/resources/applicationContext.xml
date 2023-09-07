@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mb" class="com.SpringPractice.MyBusinessClass" />
+    <bean id="aid" class="com.SpringPractice.A" >
+		<property name="b1" ref="bid"/>
+	</bean>
+	<bean id="bid" class="com.SpringPractice.B" >
+		<constructor-arg ref="aid"/>
+	</bean>
+ 
+</beans>
