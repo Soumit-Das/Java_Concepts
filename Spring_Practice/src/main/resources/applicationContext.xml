@@ -13,5 +13,14 @@
 	<bean id="bid" class="com.SpringPractice.B" >
 		<constructor-arg ref="aid"/>
 	</bean>
+	
+	
+	<bean id="dao" class="com.SpringPractice.daoApp.DAOBean"/>
+
+<bean id="service" class="com.SpringPractice.daoApp.ServiceBean" autowire="byName" />
+
+<bean id="pb" class="com.SpringPractice.daoApp.PresentationBean" autowire="byName" />
+
+	
  
 </beans>
